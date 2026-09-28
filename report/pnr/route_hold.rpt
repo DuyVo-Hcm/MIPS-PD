@@ -1,0 +1,191 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 5
+Design : mips_cpu_top
+Version: D-2010.03-ICC-SP4
+Date   : Mon Mar 26 00:36:36 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: BEST   Library: saed90nm_min
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : -40/25/125
+
+  Startpoint: dat_path_inst/u1_reg_file/reg_blk_reg[1][22]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[1][22]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.08       0.08
+  dat_path_inst/u1_reg_file/reg_blk_reg[1][22]/CLK (DFFARX1)
+                                                          0.00       0.08 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[1][22]/Q (DFFARX1)
+                                                          0.13       0.21 f
+  dat_path_inst/u1_reg_file/U1681/Q (MUX21X1)             0.04 *     0.25 f
+  dat_path_inst/u1_reg_file/U3598/Z (NBUFFX4)             0.04 *     0.29 f
+  dat_path_inst/u1_reg_file/reg_blk_reg[1][22]/D (DFFARX1)
+                                                          0.00 *     0.29 f
+  data arrival time                                                  0.29
+
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.08       0.08
+  clock uncertainty                                       0.20       0.28
+  dat_path_inst/u1_reg_file/reg_blk_reg[1][22]/CLK (DFFARX1)
+                                                          0.00       0.28 r
+  library hold time                                       0.01       0.29
+  data required time                                                 0.29
+  --------------------------------------------------------------------------
+  data required time                                                 0.29
+  data arrival time                                                 -0.29
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase signficant digits)                       0.00
+
+
+  Startpoint: dat_path_inst/pc_reg[0]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: dat_path_inst/pc_reg[0]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.09       0.09
+  dat_path_inst/pc_reg[0]/CLK (DFFARX1)                   0.00       0.09 r
+  dat_path_inst/pc_reg[0]/Q (DFFARX1)                     0.15       0.23 f
+  dat_path_inst/U199/Q (AO22X1)                           0.04 *     0.28 f
+  dat_path_inst/U246/Z (NBUFFX2)                          0.03 *     0.30 f
+  dat_path_inst/pc_reg[0]/D (DFFARX1)                     0.00 *     0.30 f
+  data arrival time                                                  0.30
+
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.09       0.09
+  clock uncertainty                                       0.20       0.29
+  dat_path_inst/pc_reg[0]/CLK (DFFARX1)                   0.00       0.29 r
+  library hold time                                       0.02       0.30
+  data required time                                                 0.30
+  --------------------------------------------------------------------------
+  data required time                                                 0.30
+  data arrival time                                                 -0.30
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase signficant digits)                       0.00
+
+
+  Startpoint: dat_path_inst/u1_reg_file/reg_blk_reg[9][22]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[9][22]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  dat_path_inst/u1_reg_file/reg_blk_reg[9][22]/CLK (DFFARX1)
+                                                          0.00       0.07 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[9][22]/Q (DFFARX1)
+                                                          0.14       0.21 f
+  dat_path_inst/u1_reg_file/U1937/Q (MUX21X1)             0.04 *     0.25 f
+  dat_path_inst/u1_reg_file/U3482/Z (NBUFFX4)             0.04 *     0.29 f
+  dat_path_inst/u1_reg_file/reg_blk_reg[9][22]/D (DFFARX1)
+                                                          0.00 *     0.29 f
+  data arrival time                                                  0.29
+
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  clock uncertainty                                       0.20       0.27
+  dat_path_inst/u1_reg_file/reg_blk_reg[9][22]/CLK (DFFARX1)
+                                                          0.00       0.27 r
+  library hold time                                       0.01       0.29
+  data required time                                                 0.29
+  --------------------------------------------------------------------------
+  data required time                                                 0.29
+  data arrival time                                                 -0.29
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase signficant digits)                       0.00
+
+
+  Startpoint: dat_path_inst/u1_reg_file/reg_blk_reg[9][31]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[9][31]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  dat_path_inst/u1_reg_file/reg_blk_reg[9][31]/CLK (DFFARX1)
+                                                          0.00       0.07 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[9][31]/Q (DFFARX1)
+                                                          0.14       0.21 f
+  dat_path_inst/u1_reg_file/U1928/Q (MUX21X1)             0.04 *     0.25 f
+  dat_path_inst/u1_reg_file/U3473/Z (NBUFFX4)             0.04 *     0.29 f
+  dat_path_inst/u1_reg_file/reg_blk_reg[9][31]/D (DFFARX1)
+                                                          0.00 *     0.29 f
+  data arrival time                                                  0.29
+
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  clock uncertainty                                       0.20       0.27
+  dat_path_inst/u1_reg_file/reg_blk_reg[9][31]/CLK (DFFARX1)
+                                                          0.00       0.27 r
+  library hold time                                       0.02       0.29
+  data required time                                                 0.29
+  --------------------------------------------------------------------------
+  data required time                                                 0.29
+  data arrival time                                                 -0.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dat_path_inst/u1_reg_file/reg_blk_reg[22][22]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[22][22]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  dat_path_inst/u1_reg_file/reg_blk_reg[22][22]/CLK (DFFARX1)
+                                                          0.00       0.07 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[22][22]/Q (DFFARX1)
+                                                          0.14       0.21 f
+  dat_path_inst/u1_reg_file/U2353/Q (MUX21X1)             0.04 *     0.25 f
+  dat_path_inst/u1_reg_file/U2967/Z (NBUFFX4)             0.04 *     0.29 f
+  dat_path_inst/u1_reg_file/reg_blk_reg[22][22]/D (DFFARX1)
+                                                          0.00 *     0.29 f
+  data arrival time                                                  0.29
+
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  clock uncertainty                                       0.20       0.27
+  dat_path_inst/u1_reg_file/reg_blk_reg[22][22]/CLK (DFFARX1)
+                                                          0.00       0.27 r
+  library hold time                                       0.01       0.29
+  data required time                                                 0.29
+  --------------------------------------------------------------------------
+  data required time                                                 0.29
+  data arrival time                                                 -0.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

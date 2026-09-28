@@ -1,0 +1,67 @@
+Information: Float pin scale factor for the 'max' operating condition of scenario 'default' is set to 1.000 (CTS-375)
+ 
+****************************************
+Report : clock tree
+Design : mips_cpu_top
+Version: D-2010.03-ICC-SP4
+Date   : Mon Mar 26 00:36:36 2018
+****************************************
+
+
+============ Global Skew Report ================
+
+Clock Tree Name                : "clock"
+Clock Period                   : 20.00000       
+Clock Tree root pin            : "clock"
+Number of Levels               : 3
+Number of Sinks                : 1056
+Number of CT Buffers           : 25
+Number of CTS added gates      : 0
+Number of Preexisting Gates    : 0
+Number of Preexisting Buf/Inv  : 0
+Total Number of Clock Cells    : 25
+Total Area of CT Buffers       : 138.24004      
+Total Area of CT cells         : 138.24004      
+Max Global Skew                : 0.02353   
+Number of MaxTran Violators    : 0
+Number of MaxCap Violators     : 0
+Number of MaxFanout Violators  : 0
+
+
+Operating Condition               worst
+Clock global Skew                 0.024
+Longest path delay                0.094
+Shortest path delay               0.071
+
+The longest path delay end pin: dat_path_inst/u1_reg_file/reg_blk_reg[12][7]/CLK
+The shortest path delay end pin: dat_path_inst/u1_reg_file/reg_blk_reg[19][24]/CLK
+
+The longest Path:
+Pin           Cap                 Fanout    Trans     Incr      Arri
+--------------------------------------------------------------------------------
+clock         0.000                      1  0.000     0.000     0.000     r
+clock         165.347                   24  0.000     0.000     0.000     r
+dat_path_inst/u1_reg_file/NBUFFX2_G1B1I17/INP
+              165.347                    1  0.026     0.012     0.012     r
+dat_path_inst/u1_reg_file/NBUFFX2_G1B1I17/Z
+              125.710                   56  0.095     0.081     0.093     r
+dat_path_inst/u1_reg_file/reg_blk_reg[12][7]/CLK
+              125.710                    0  0.095     0.001     0.094     r
+[clock delay]                                                   0.094
+--------------------------------------------------------------------------------
+
+The Shortest Path:
+Pin           Cap                 Fanout    Trans     Incr      Arri
+--------------------------------------------------------------------------------
+clock         0.000                      1  0.000     0.000     0.000     r
+clock         165.347                   24  0.000     0.000     0.000     r
+dat_path_inst/u1_reg_file/NBUFFX2_G1B1I21/INP
+              165.347                    1  0.006     0.003     0.003     r
+dat_path_inst/u1_reg_file/NBUFFX2_G1B1I21/Z
+              92.144                    40  0.073     0.065     0.068     r
+dat_path_inst/u1_reg_file/reg_blk_reg[19][24]/CLK
+              92.144                     0  0.073     0.003     0.071     r
+[clock delay]                                                   0.071
+--------------------------------------------------------------------------------
+
+1
